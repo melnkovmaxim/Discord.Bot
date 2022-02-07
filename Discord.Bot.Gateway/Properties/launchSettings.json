@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Discord.Bot.Gateway": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

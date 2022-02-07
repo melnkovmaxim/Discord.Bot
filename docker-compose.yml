@@ -1,0 +1,55 @@
+version: '3.4'
+
+services:
+  discord.bot.gateway:
+    image: ${DOCKER_REGISTRY-}discordbotgateway
+    build:
+      context: .
+      dockerfile: Discord.Bot.Gateway/Dockerfile
+    environment:
+      RabbitMqUrl: facesrabbitmq
+      OrdersApiUrl: facesordersapi
+      SignalrHubUrl: facesordersapi
+    depends_on:
+      - other.rabbitmq
+    networks:
+      - discord.bot.network
+  discord.bot.textcommandprocessing:
+    image: ${DOCKER_REGISTRY-}discordbottextcommandprocessin
+    build:
+      context: .
+      dockerfile: Discord.Bot.TextCommandProcessingService/Dockerfile
+    environment:
+      FaceApiUrl: microservices.facesapi
+      OrdersContextConnection: Server=facesmssql;Database=OrdersDb;User Id=sa;Password=BigPassw0rd
+      RabbitMqUrl: facesrabbitmq
+    depends_on:
+      - other.rabbitmq
+    networks:
+      - discord.bot.network
+  discord.bot.notificationservice: 
+    image: ${DOCKER_REGISTRY-}discordbotnotificationservice
+    build:
+      context: .
+      dockerfile: Discord.Bot.NotificationService/Dockerfile
+    environment:
+      ACCEPT_EULA: Y
+    depends_on:
+      - other.rabbitmq
+    networks:
+      - discord.bot.network
+  other.rabbitmq:
+    image: rabbitmq:3.9.12-management
+    ports:
+      - "15672:15672"
+      - "5672:5672"
+    environment:
+      ACCEPT_EULA: Y
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
+    networks:
+      - discord.bot.network
+
+networks:
+  discord.bot.network:
+    driver: bridge

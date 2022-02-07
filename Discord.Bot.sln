@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31912.275
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Discord.Bot.Gateway", "Discord.Bot.Gateway\Discord.Bot.Gateway.csproj", "{458811AB-2033-4107-9091-A27F10D4CEC9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Discord.Bot.TextCommandProcessingService", "Discord.Bot.TextCommandProcessingService\Discord.Bot.TextCommandProcessingService.csproj", "{D2540F08-10B8-47CC-ACDA-79A3C98F30FE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Discord.Bot.MediaCommandProcessingService", "Discord.Bot.MediaCommandProcessingService\Discord.Bot.MediaCommandProcessingService.csproj", "{69FEE2D8-900D-430C-8233-2D0DE30ECA12}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Discord.Bot.Shared", "Discord.Bot.Shared\Discord.Bot.Shared.csproj", "{593F06D7-E6DA-4C58-90E8-9B966F1D3814}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Discord.Bot.NotificationService", "Discord.Bot.NotificationService\Discord.Bot.NotificationService.csproj", "{F5CFC448-7A4B-4905-AB07-F590A96FBCEA}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{5633D7A7-ED12-47A2-B4C2-25834FA25E64}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{458811AB-2033-4107-9091-A27F10D4CEC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{458811AB-2033-4107-9091-A27F10D4CEC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{458811AB-2033-4107-9091-A27F10D4CEC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{458811AB-2033-4107-9091-A27F10D4CEC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2540F08-10B8-47CC-ACDA-79A3C98F30FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2540F08-10B8-47CC-ACDA-79A3C98F30FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2540F08-10B8-47CC-ACDA-79A3C98F30FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2540F08-10B8-47CC-ACDA-79A3C98F30FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69FEE2D8-900D-430C-8233-2D0DE30ECA12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69FEE2D8-900D-430C-8233-2D0DE30ECA12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69FEE2D8-900D-430C-8233-2D0DE30ECA12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69FEE2D8-900D-430C-8233-2D0DE30ECA12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{593F06D7-E6DA-4C58-90E8-9B966F1D3814}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{593F06D7-E6DA-4C58-90E8-9B966F1D3814}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{593F06D7-E6DA-4C58-90E8-9B966F1D3814}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{593F06D7-E6DA-4C58-90E8-9B966F1D3814}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5CFC448-7A4B-4905-AB07-F590A96FBCEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5CFC448-7A4B-4905-AB07-F590A96FBCEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5CFC448-7A4B-4905-AB07-F590A96FBCEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5CFC448-7A4B-4905-AB07-F590A96FBCEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5633D7A7-ED12-47A2-B4C2-25834FA25E64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5633D7A7-ED12-47A2-B4C2-25834FA25E64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5633D7A7-ED12-47A2-B4C2-25834FA25E64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5633D7A7-ED12-47A2-B4C2-25834FA25E64}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2E96453E-965B-4803-BB46-F184AB75624D}
+	EndGlobalSection
+EndGlobal
